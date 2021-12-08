@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
 
+import {useState, useEffect} from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import Home from './components/home_component/home';
+import './App.css';
+const Typ=(word,time)=>{
+  
+  const [currentState, setCurrentState] = useState('')
+  
+  useEffect(()=>{
+
+  const timeOut= setTimeout(()=>{
+ setCurrentState(word.slice(0,currentState.length+1))
+    },time)
+   return ()=> clearTimeout(timeOut)
+  },[currentState])
+  
+  return currentState
+}
 function App() {
+  
+  
+  
+// const typed= Typ("hello world", 100)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div className="App">   
+     <Home/>
+  
+ 
+    
+   
+    
     </div>
-  );
+  )
 }
 
 export default App;
