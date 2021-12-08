@@ -1,17 +1,13 @@
 import React from 'react';
+import Nav from '../Nav_component/nav'
+import Button from '../buttons_component/Button'
 import './home.css'
 
 const Home = () => {
     return (
         <div className="container-fluid home_body">
-            <div className="container">
-                <nav className='nav'>
-                     <div className='container-fluid py-3'>
-                        <a className="logo" href="">Moiyo</a>
-                    </div>
-                </nav>
-           </div>
-           
+          <Nav/>
+           <Button/>
         </div>
     );
 }
