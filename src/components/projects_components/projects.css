@@ -1,0 +1,17 @@
+.project_card{
+    width: 360px;
+}
+.projectTitle{
+   
+   
+}
+.projectTitle:after{
+    content: '';
+
+    vertical-align: middle;
+    width: 70%;
+    display: inline-block;
+    padding-left:1px;
+    height:1px;
+    background-color: #0A192F;
+}

@@ -1,10 +1,8 @@
 import React from 'react';
 import './Button.css'
-const Button = () => {
+const Button = ({btnName}) => {
     return (
-        <button className="py-1 px-3 button " >
-           get intouch!
-        </button>
+        <button className="py-1 px-3 button">{btnName}</button>
     );
 }
 
