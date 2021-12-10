@@ -1,6 +1,7 @@
 import React from "react";
-
+import StackCard from "./Stack_card";
 import abtImg from "../images/nomad.svg";
+import frontEnd from "../images/frontend.svg";
 import "./About.css";
 
 const About = () => {
@@ -24,9 +25,21 @@ const About = () => {
             <img className="img-fluid w-75 " src={abtImg} />
           </figure>
         </div>
-      
       </div>
-        <div class="container position-absolute   bg-danger   abs_section"></div>
+      <div class="container position-absolute   bg-danger   abs_section">
+        <StackCard
+          img={frontEnd}
+          titl={"Front-end Developer"}
+          about={`I like to code things from 
+scratch, and enjoy bringing 
+ideas to life in the browser.`}
+          stackTitle={`Language I speak:`}
+          stacks={`HTML,CSS,Reactjs,Angular2+
+          Vanilla js`}
+          devTitle={`Dev Tools`}
+        />
+        
+      </div>
     </div>
   );
 };
