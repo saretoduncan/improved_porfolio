@@ -17,3 +17,31 @@ a{
 .orange{
   color:#F2491F;
 }
+
+   
+   
+
+.section_title:after{
+    content: '';
+
+    vertical-align: middle;
+    width: 70%;
+    display: inline-block;
+    padding-left:1px;
+    height:1px;
+    background-color: #0A192F ;
+    
+}
+
+.section_title1:after{
+  content: '';
+
+  vertical-align: middle;
+  width: 70%;
+  display: inline-block;
+  padding-left:1px;
+  height:1px;
+  background-color: #fff ;
+ 
+  
+}
