@@ -1,5 +1,6 @@
 .project_card{
-    width: 360px;
+    
+    min-height:200px;
 }
 .projectTitle{
    
@@ -14,4 +15,21 @@
     padding-left:1px;
     height:1px;
     background-color: #0A192F;
+    
+}
+.content-text{
+    margin:auto 0 !important;
+}
+@media only screen and(min-width: 768px) {
+    .project_card{
+        margin: 0 auto;
+    }
+    
+}
+@media only screen and (min-width: 1020px){
+    .project_card{
+    width:30%;
+    margin:0  auto 20px;
+        
+    }
 }

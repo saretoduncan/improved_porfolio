@@ -1,21 +1,22 @@
 import React from "react";
 
-const Cards = () => {
+const Cards = (props) => {
   return (
-      
-    <div class="card project_card" >
+    <div class="col-12 col-sm-6 col-md-4 card d-flex mx-md-auto flex-column project_card">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="card-link">
-          Card link
+        <h5 class="card-title text-center ">{props.titl}</h5>
+
+        <div className="">
+      <p class="card-text content-text">{props.content}</p>
+      </div>
+      </div>
+      
+      <div className=" text-center  ">
+        <a href={props.website} class="card-link">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
         </a>
-        <a href="#" class="card-link">
-          Another link
+        <a href={props.github} class="card-link">
+          <i class="fa fa-github" aria-hidden="true"></i>
         </a>
       </div>
     </div>
