@@ -6,11 +6,9 @@
     font-size: 12px;
     border-radius: 20px;
     font-weight: bold;
-
     
 }
 .button:hover{
     color: #F2491F;
-    background-color:#fff;
-    
+    background-color:#fff;    
 }

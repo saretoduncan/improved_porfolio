@@ -4,6 +4,29 @@ import abtImg from "../images/nomad.svg";
 import frontEnd from "../images/frontend.svg";
 import "./About.css";
 
+const frontendTools = [
+  "VS code",
+  "CodeKit",
+  "Bootstrap",
+  "Bulma",
+  "Codepen",
+  "Terminal",
+];
+const androidDevTools = ["Android studio", "Junit", "Gradle", "Terminal"];
+const backendDevTools = [
+  "Spring Boot, Java-spark",
+  "Maven",
+  "Junit",
+  "Hibernet",
+  "Intellij idea",
+  "Docker",
+  "Terminal",
+];
+const devTools = (tools) => {
+  return tools.map((tols) => {
+    return <li>{ tols}</li>;
+  });
+};
 const About = () => {
   return (
     <div className=" bg-light mt-3 position-relative ">
@@ -26,7 +49,7 @@ const About = () => {
           </figure>
         </div>
       </div>
-      <div class="container position-absolute   bg-danger   abs_section">
+      <div class="container position-absolute     abs_section">
         <StackCard
           img={frontEnd}
           titl={"Front-end Developer"}
@@ -36,9 +59,9 @@ ideas to life in the browser.`}
           stackTitle={`Language I speak:`}
           stacks={`HTML,CSS,Reactjs,Angular2+
           Vanilla js`}
-          devTitle={`Dev Tools`}
+          devTitles={`Dev Tools`}
+          dev={devTools(frontendTools)}
         />
-        
       </div>
     </div>
   );
