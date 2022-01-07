@@ -75,6 +75,16 @@ ideas to life in the browser.`}
           devTitles={`Dev Tools`}
           dev={devTools(androidDevTools)}
         />
+        <StackCard
+          img={backendImg}
+          titl={"Backend Developer"}
+          about={`Having a Knack for problem solving, good attention to details and being able to conceptualize finished products is what pushed me towards backend development.
+          `}
+          stackTitle={`Language I speak:`}
+          stacks={`Nodejs and Java`}
+          devTitles={`Dev Tools`}
+          dev={devTools(backendDevTools)}
+        />
       </div>
     </div>
   );
