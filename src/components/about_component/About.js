@@ -2,6 +2,8 @@ import React from "react";
 import StackCard from "./Stack_card";
 import abtImg from "../images/nomad.svg";
 import frontEnd from "../images/frontend.svg";
+import androidImg from "../images/androidImg.svg";
+import backendImg from "../images/backendImg.svg";
 import "./About.css";
 
 const frontendTools = [
@@ -24,7 +26,7 @@ const backendDevTools = [
 ];
 const devTools = (tools) => {
   return tools.map((tols) => {
-    return <li>{ tols}</li>;
+    return <li>{tols}</li>;
   });
 };
 const About = () => {
@@ -49,7 +51,7 @@ const About = () => {
           </figure>
         </div>
       </div>
-      <div class="container position-absolute     abs_section">
+      <div class="container position-absolute row abs_section">
         <StackCard
           img={frontEnd}
           titl={"Front-end Developer"}
@@ -61,6 +63,17 @@ ideas to life in the browser.`}
           Vanilla js`}
           devTitles={`Dev Tools`}
           dev={devTools(frontendTools)}
+        />
+        <StackCard
+          img={androidImg}
+          titl={"Android Developer"}
+          about={`Making android applications
+          that are usefull to others make me feel proud of myself. 
+          its like a super power.`}
+          stackTitle={`Language I speak:`}
+          stacks={`Kotlin and Java`}
+          devTitles={`Dev Tools`}
+          dev={devTools(androidDevTools)}
         />
       </div>
     </div>
