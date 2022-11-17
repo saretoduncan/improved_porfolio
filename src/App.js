@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Home from "./components/home_component/home";
 import Projects from "./components/projects_components/projects";
 import About from "./components/about_component/About";
+import ContactMe from "./components/contact_component/ContactMe";
 import "./App.css";
 const Typ = (word, time) => {
   const [currentState, setCurrentState] = useState("");
@@ -19,10 +20,11 @@ const Typ = (word, time) => {
 function App() {
   // const typed= Typ("hello world", 100)
   return (
-    <div className="App">
+    <div className='App'>
       <Home />
       <Projects />
-      <About/>
+      <About />
+      <ContactMe />
     </div>
   );
 }
