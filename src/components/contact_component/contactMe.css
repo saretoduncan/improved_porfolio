@@ -1,3 +1,12 @@
 .contactBackground{
     background-color: #0A192F;
+    color:white
+}
+
+.contact_me{
+   border-radius: 20px;
+   border: solid 1px #F2491F;
+}
+.error{
+    font-size: x-small;
 }

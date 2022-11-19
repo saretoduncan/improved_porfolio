@@ -30,7 +30,9 @@ a{
     background-color: #0A192F ;
     
 }
-
+.main_purple{
+  background-color: #0A192F;
+}
 .section_title1:after{
   content: '';
 
